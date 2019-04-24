@@ -1,0 +1,40 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_SmokeTest,,,,2019-04-24 12:14:56,2019-04-24 12:15:15,18.737s,FAILED
+,,,,,,,
+Test Cases/TestHTTPMethods,,,,2019-04-24 12:14:56,2019-04-24 12:15:01,5.113s,FAILED
+"createresponse = sendRequestAndVerify(findTestObject(""RESTAPI/CreateCoupon""))",,,,2019-04-24 12:14:57,2019-04-24 12:15:00,3.409s,PASSED
+"updateresponse = sendRequestAndVerify(findTestObject(""RESTAPI/UpdateCoupon""))",,,,2019-04-24 12:15:00,2019-04-24 12:15:01,0.750s,PASSED
+"deleteresponse = sendRequestAndVerify(findTestObject(""RESTAPI/DeleteCoupon""))",,,,2019-04-24 12:15:01,2019-04-24 12:15:01,0.610s,FAILED
+,,,,,,,
+Test Cases/VerifyAddingTwoNumbers,,,,2019-04-24 12:15:01,2019-04-24 12:15:02,1.155s,PASSED
+"response = sendRequest(findTestObject(""Calculator/Addition""))",,,,2019-04-24 12:15:01,2019-04-24 12:15:02,0.724s,PASSED
+"verifyElementText(response, ""AddResponse.AddResult"", ""11"")",,,,2019-04-24 12:15:02,2019-04-24 12:15:02,0.264s,PASSED
+,,,,,,,
+Test Cases/VerifyingCapitalCityforaCountryISOCode,,,,2019-04-24 12:15:02,2019-04-24 12:15:05,2.270s,PASSED
+"response = sendRequest(findTestObject(""CountryInfoService/SOAP/CapitalCity""))",,,,2019-04-24 12:15:03,2019-04-24 12:15:04,0.969s,PASSED
+"response = sendRequestAndVerify(findTestObject(""CountryInfoService/SOAP/CapitalCity""))",,,,2019-04-24 12:15:04,2019-04-24 12:15:05,1.121s,PASSED
+"verifyElementText(response, ""CapitalCityResponse.CapitalCityResult"", ""Islamabad"")",,,,2019-04-24 12:15:05,2019-04-24 12:15:05,0.036s,PASSED
+,,,,,,,
+Test Cases/verifyListOFCouponsAPI,,REST API,,2019-04-24 12:15:05,2019-04-24 12:15:06,1.221s,FAILED
+"response = sendRequestAndVerify(findTestObject(""RESTAPI/ListCoupons""))",,,,2019-04-24 12:15:05,2019-04-24 12:15:06,0.988s,PASSED
+"verifyElementPropertyValue(response, ""data[0].object"", ""coupon"")",,,,2019-04-24 12:15:06,2019-04-24 12:15:06,0.015s,PASSED
+"verifyElementPropertyValue(response, ""data[0].name"", ""CouponWith34OFF"")",,,,2019-04-24 12:15:06,2019-04-24 12:15:06,0.021s,FAILED
+,,,,,,,
+Test Cases/TestHTTPMethods,,,,2019-04-24 12:15:06,2019-04-24 12:15:08,2.195s,FAILED
+"createresponse = sendRequestAndVerify(findTestObject(""RESTAPI/CreateCoupon""))",,,,2019-04-24 12:15:06,2019-04-24 12:15:07,0.949s,PASSED
+"updateresponse = sendRequestAndVerify(findTestObject(""RESTAPI/UpdateCoupon""))",,,,2019-04-24 12:15:07,2019-04-24 12:15:08,0.670s,PASSED
+"deleteresponse = sendRequestAndVerify(findTestObject(""RESTAPI/DeleteCoupon""))",,,,2019-04-24 12:15:08,2019-04-24 12:15:08,0.566s,FAILED
+,,,,,,,
+Test Cases/VerifyAddingTwoNumbers,,,,2019-04-24 12:15:08,2019-04-24 12:15:09,0.438s,PASSED
+"response = sendRequest(findTestObject(""Calculator/Addition""))",,,,2019-04-24 12:15:08,2019-04-24 12:15:09,0.375s,PASSED
+"verifyElementText(response, ""AddResponse.AddResult"", ""11"")",,,,2019-04-24 12:15:09,2019-04-24 12:15:09,0.057s,PASSED
+,,,,,,,
+Test Cases/VerifyingCapitalCityforaCountryISOCode,,,,2019-04-24 12:15:09,2019-04-24 12:15:11,2.101s,PASSED
+"response = sendRequest(findTestObject(""CountryInfoService/SOAP/CapitalCity""))",,,,2019-04-24 12:15:09,2019-04-24 12:15:10,0.955s,PASSED
+"response = sendRequestAndVerify(findTestObject(""CountryInfoService/SOAP/CapitalCity""))",,,,2019-04-24 12:15:10,2019-04-24 12:15:11,1.104s,PASSED
+"verifyElementText(response, ""CapitalCityResponse.CapitalCityResult"", ""Islamabad"")",,,,2019-04-24 12:15:11,2019-04-24 12:15:11,0.031s,PASSED
+,,,,,,,
+Test Cases/verifyListOFCouponsAPI,,REST API,,2019-04-24 12:15:11,2019-04-24 12:15:15,3.878s,FAILED
+"response = sendRequestAndVerify(findTestObject(""RESTAPI/ListCoupons""))",,,,2019-04-24 12:15:11,2019-04-24 12:15:15,3.836s,PASSED
+"verifyElementPropertyValue(response, ""data[0].object"", ""coupon"")",,,,2019-04-24 12:15:15,2019-04-24 12:15:15,0.015s,PASSED
+"verifyElementPropertyValue(response, ""data[0].name"", ""CouponWith34OFF"")",,,,2019-04-24 12:15:15,2019-04-24 12:15:15,0.016s,FAILED

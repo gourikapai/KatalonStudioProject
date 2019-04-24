@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>REST API</description>
+   <name>verifyListOFCouponsAPI</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c69e1e3c-f05f-4945-ad2f-6684dc717680</testCaseGuid>
+</TestCaseEntity>

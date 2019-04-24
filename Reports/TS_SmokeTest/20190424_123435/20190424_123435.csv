@@ -1,0 +1,25 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_SmokeTest,,,,2019-04-24 12:34:38,2019-04-24 12:34:48,10.212s,PASSED
+,,,,,,,
+Test Cases/TestHTTPMethods,,,,2019-04-24 12:34:38,2019-04-24 12:34:45,6.451s,PASSED
+"createresponse = sendRequestAndVerify(findTestObject(""RESTAPI/CreateCoupon""))",,,,2019-04-24 12:34:39,2019-04-24 12:34:42,3.401s,PASSED
+"updateresponse = sendRequestAndVerify(findTestObject(""RESTAPI/UpdateCoupon""))",,,,2019-04-24 12:34:42,2019-04-24 12:34:43,0.697s,PASSED
+"deleteresponse = sendRequestAndVerify(findTestObject(""RESTAPI/DeleteCoupon""))",,,,2019-04-24 12:34:43,2019-04-24 12:34:43,0.674s,PASSED
+"response = sendRequestAndVerify(findTestObject(""RESTAPI/ListCoupons""))",,,,2019-04-24 12:34:43,2019-04-24 12:34:44,0.693s,PASSED
+"retreiveresponse = sendRequestAndVerify(findTestObject(""RESTAPI/RetrieveCoupon""))",,,,2019-04-24 12:34:44,2019-04-24 12:34:45,0.580s,PASSED
+"verifyElementPropertyValue(response, ""data[0].object"", ""coupon"")",,,,2019-04-24 12:34:45,2019-04-24 12:34:45,0.016s,PASSED
+"verifyElementPropertyValue(deleteresponse, ""deleted"", ""true"")",,,,2019-04-24 12:34:45,2019-04-24 12:34:45,0.013s,PASSED
+"verifyElementPropertyValue(updateresponse, ""name"", ""updatedcoupon"")",,,,2019-04-24 12:34:45,2019-04-24 12:34:45,0.021s,PASSED
+"verifyResponseStatusCode(createresponse, 200)",,,,2019-04-24 12:34:45,2019-04-24 12:34:45,0.004s,PASSED
+"verifyResponseStatusCode(updateresponse, 200)",,,,2019-04-24 12:34:45,2019-04-24 12:34:45,0.001s,PASSED
+"verifyResponseStatusCode(deleteresponse, 200)",,,,2019-04-24 12:34:45,2019-04-24 12:34:45,0.005s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2019-04-24 12:34:45,2019-04-24 12:34:45,0.002s,PASSED
+,,,,,,,
+Test Cases/VerifyAddingTwoNumbers,,,,2019-04-24 12:34:45,2019-04-24 12:34:46,1.178s,PASSED
+"response = sendRequest(findTestObject(""Calculator/Addition""))",,,,2019-04-24 12:34:45,2019-04-24 12:34:46,0.792s,PASSED
+"verifyElementText(response, ""AddResponse.AddResult"", ""11"")",,,,2019-04-24 12:34:46,2019-04-24 12:34:46,0.205s,PASSED
+,,,,,,,
+Test Cases/VerifyingCapitalCityforaCountryISOCode,,,,2019-04-24 12:34:46,2019-04-24 12:34:48,2.282s,PASSED
+"response = sendRequest(findTestObject(""CountryInfoService/SOAP/CapitalCity""))",,,,2019-04-24 12:34:46,2019-04-24 12:34:47,0.967s,PASSED
+"response = sendRequestAndVerify(findTestObject(""CountryInfoService/SOAP/CapitalCity""))",,,,2019-04-24 12:34:47,2019-04-24 12:34:48,1.134s,PASSED
+"verifyElementText(response, ""CapitalCityResponse.CapitalCityResult"", ""Islamabad"")",,,,2019-04-24 12:34:48,2019-04-24 12:34:48,0.025s,PASSED
