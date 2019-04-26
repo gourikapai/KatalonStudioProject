@@ -3,7 +3,7 @@
    <description></description>
    <name>DeleteCoupon</name>
    <tag></tag>
-   <elementGuidId>715d583a-bdb7-4f40-814a-01f72f20c37e</elementGuidId>
+   <elementGuidId>917e2849-a32b-4e30-b62a-cf62059143ef</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -23,12 +23,33 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>https://api.stripe.com/v1/coupons/7TeZ0Gkb</restUrl>
+   <restUrl>${base_URL}${base_PATH}/${CouponID}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>GlobalVariable.BASEURL</defaultValue>
+      <description></description>
+      <id>b2eeecfe-5309-46a1-b14e-e477dd94e39a</id>
+      <masked>false</masked>
+      <name>base_URL</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.BASEPATH</defaultValue>
+      <description></description>
+      <id>0faca16a-56a5-4960-8960-924f9c4d13c5</id>
+      <masked>false</masked>
+      <name>base_PATH</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.CouponID</defaultValue>
+      <description></description>
+      <id>b3eb7a6b-8f88-4705-a68d-2f9897b212c6</id>
+      <masked>false</masked>
+      <name>CouponID</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -50,6 +71,6 @@ WS.verifyResponseStatusCode(response, 200)
 assertThat(response.getStatusCode()).isEqualTo(200)
 
 
-WS.verifyElementPropertyValue(response, 'deleted', 'true')</verificationScript>
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

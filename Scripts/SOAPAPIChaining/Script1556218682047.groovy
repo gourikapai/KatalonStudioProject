@@ -21,7 +21,7 @@ def datavalue = new XmlSlurper().parseText(xmlvalue)
 
 def countrycode = datavalue.ListOfCountryNamesByCodeResult.tCountryCodeAndName[0].sISOCode.text()
 
-println("-----------------------Extracted country code------- :"+countrycode)
+println('-----------------------Extracted country code------- :' + countrycode)
 
 GlobalVariable.CountryISOCode = countrycode
 
@@ -31,30 +31,17 @@ response2 = WS.sendRequestAndVerify(findTestObject('CountryInfoService/SOAP/Coun
 
 WS.verifyElementText(response2, 'CountryCurrencyResponse.CountryCurrencyResult.sISOCode', 'EUR')
 
-def xmlcurrencyvalue=response2.responseBodyContent
+def xmlcurrencyvalue = response2.responseBodyContent
 
-def currency=new XmlSlurper().parseText(xmlcurrencyvalue)
+def currency = new XmlSlurper().parseText(xmlcurrencyvalue)
 
-def currencycode=currency.CountryCurrencyResult.sISOCode.text()
+def currencycode = currency.CountryCurrencyResult.sISOCode
 
-println("-------------------Extracted currency code----------- :"+currencycode)
+println('-------------------Extracted currency code----------- :' + currencycode)
 
-GlobalVariable.CurrencyISOCode=currencycode
-
-response3=WS.sendRequestAndVerify(findTestObject('CountryInfoService/SOAP/CurrencyName'))
+//GlobalVariable.CurrencyISOCode=currencycode
+//passed currency code directly 
+response3 = WS.sendRequestAndVerify(findTestObject('CountryInfoService/SOAP/CurrencyName', [('CurrencyISOCode') : currencycode]))
 
 WS.verifyElementText(response3, 'CurrencyNameResponse.CurrencyNameResult', 'Euro')
 
-/*
- * For REST API Chaining : Refer Udemy Course 
- * 
- * https://www.udemy.com/api-testing-with-katalon-studio-step-by-step-for-beginners/learn/v4/content
- * 
- * 
- * 
- * 
- */
-/*jsonresponse = WS.sendRequestAndVerify(findTestObject('RESTAPI/CreateCoupon'))
-def slurper=new groovy.json.JsonSlurper()
-def result=slurper.parseText(jsonresponse.getResponseBodyContent())
-def value=result.data[0].firstName*/

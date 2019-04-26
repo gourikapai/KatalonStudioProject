@@ -1,0 +1,13 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SOAPDataDrivenTestDemo,,,,2019-04-26 10:28:47,2019-04-26 10:28:55,7.135s,PASSED
+,,,,,,,
+Test Cases/SOAPDataDrivenTest,,,,2019-04-26 10:28:48,2019-04-26 10:28:55,6.720s,PASSED
+"response1 = sendRequestAndVerify(findTestObject(""getCapital"", [""CountryCode"":country]))",,,,2019-04-26 10:28:49,2019-04-26 10:28:53,4.039s,PASSED
+"println(""----------------Country Code is :"" + country)",,,,2019-04-26 10:28:53,2019-04-26 10:28:53,0.006s,PASSED
+"verifyElementText(response1, ""CapitalCityResponse.CapitalCityResult"", capital)",,,,2019-04-26 10:28:53,2019-04-26 10:28:53,0.424s,PASSED
+"println(""-------------------Capital is :"" + capital)",,,,2019-04-26 10:28:53,2019-04-26 10:28:53,0.002s,PASSED
+"response2 = sendRequestAndVerify(findTestObject(""getCurrency"", [""CountryCode"":country]))",,,,2019-04-26 10:28:53,2019-04-26 10:28:54,1.201s,PASSED
+"println(""--------------------------currency code is :"" + CurrencyCode)",,,,2019-04-26 10:28:54,2019-04-26 10:28:54,0.001s,PASSED
+"println(""-------------------------------currency name is :"" + CurrencyName)",,,,2019-04-26 10:28:54,2019-04-26 10:28:54,0.001s,PASSED
+"verifyElementText(response2, ""CountryCurrencyResponse.CountryCurrencyResult.sISOCode"", CurrencyCode)",,,,2019-04-26 10:28:54,2019-04-26 10:28:54,0.047s,PASSED
+"verifyElementText(response2, ""CountryCurrencyResponse.CountryCurrencyResult.sName"", CurrencyName)",,,,2019-04-26 10:28:54,2019-04-26 10:28:55,0.035s,PASSED

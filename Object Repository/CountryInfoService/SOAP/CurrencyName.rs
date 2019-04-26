@@ -28,7 +28,7 @@
    <variables>
       <defaultValue>GlobalVariable.CurrencyISOCode</defaultValue>
       <description></description>
-      <id>315636bc-a032-4b98-980e-add897749600</id>
+      <id>5154e9aa-a31a-450a-ac58-45052a5e1e73</id>
       <masked>false</masked>
       <name>CurrencyISOCode</name>
    </variables>

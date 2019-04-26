@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="SOAPDataDrivenTestDemo" time="7" tests="1" failures="0" errors="0">
+   <testsuite name="SOAPDataDrivenTestDemo" tests="1" failures="0" errors="0" time="7" timestamp="2019-04-26 10:01:41" hostname="vishw - DESKTOP-OJ9G18E" id="Test Suites/SOAPDataDrivenTestDemo">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\vishw\\git\\KatalonStudioProject\\Reports\\SOAPDataDrivenTestDemo\\20190426_100133"/>
+         <property name="logFiles" value="C:\\Users\\vishw\\git\\KatalonStudioProject\\Reports\\SOAPDataDrivenTestDemo\\20190426_100133\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="vishw - DESKTOP-OJ9G18E"/>
+         <property name="hostAddress" value="192.168.1.105"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="6.1.2.2"/>
+      </properties>
+      <testcase name="Test Cases/SOAPDataDrivenTest" classname="Test Cases/SOAPDataDrivenTest" status="PASSED">
+         <system-out><![CDATA[2019-04-26 10:01:41 - [TEST_CASE][PASSED] - Test Cases/SOAPDataDrivenTest: Test Cases/SOAPDataDrivenTest
+
+2019-04-26 10:01:42 - [TEST_STEP][PASSED] - response1 = sendRequestAndVerify(findTestObject("getCapital", ["CountryCode":country])): Send request and verify the response successfully
+
+2019-04-26 10:01:46 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-04-26 10:01:47 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-04-26 10:01:47 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-04-26 10:01:47 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-04-26 10:01:47 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-04-26 10:01:47 - [TEST_STEP][PASSED] - println("----------------Country Code is :" + country): null
+
+2019-04-26 10:01:47 - [TEST_STEP][PASSED] - verifyElementText(response1, "CapitalCityResponse.CapitalCityResult", capital): Verify element text successfully
+
+2019-04-26 10:01:47 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-04-26 10:01:47 - [TEST_STEP][PASSED] - println("-------------------Capital is :" + capital): null
+
+2019-04-26 10:01:47 - [TEST_STEP][PASSED] - response2 = sendRequestAndVerify(findTestObject("getCurrency", ["CountryCode":country])): Send request and verify the response successfully
+
+2019-04-26 10:01:48 - [TEST_CASE][PASSED] - Start Test Case : Verification: Verification accomplished successfully
+
+2019-04-26 10:01:48 - [TEST_STEP][PASSED] - request = getInstance().getCurrentRequest(): null
+
+2019-04-26 10:01:48 - [TEST_STEP][PASSED] - response = getInstance().getCurrentResponse(): null
+
+2019-04-26 10:01:48 - [MESSAGE][PASSED] - Verify response successfully
+
+2019-04-26 10:01:48 - [MESSAGE][PASSED] - Send request and verify the response successfully
+
+2019-04-26 10:01:48 - [TEST_STEP][PASSED] - println("--------------------------currency code is :" + CurrencyCode): null
+
+2019-04-26 10:01:48 - [TEST_STEP][PASSED] - println("-------------------------------currency name is :" + CurrencyName): null
+
+2019-04-26 10:01:48 - [TEST_STEP][PASSED] - verifyElementText(response2, "CountryCurrencyResponse.CountryCurrencyResult.sISOCode", CurrencyCode): Verify element text successfully
+
+2019-04-26 10:01:48 - [MESSAGE][PASSED] - Verify element text successfully
+
+2019-04-26 10:01:49 - [TEST_STEP][PASSED] - verifyElementText(response2, "CountryCurrencyResponse.CountryCurrencyResult.sName", CurrencyName): Verify element text successfully
+
+2019-04-26 10:01:49 - [MESSAGE][PASSED] - Verify element text successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2019-04-26 10:01:41 - [TEST_SUITE][PASSED] - SOAPDataDrivenTestDemo: Test Cases/SOAPDataDrivenTest]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

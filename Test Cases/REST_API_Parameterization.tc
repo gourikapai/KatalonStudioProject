@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>REST_API_Parameterization</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3eb5f7b1-9ee7-4328-8a2c-c75af86ab348</testCaseGuid>
+   <variable>
+      <defaultValue>'55'</defaultValue>
+      <description></description>
+      <id>fe53f7cb-08b2-4888-b241-5f2d55644245</id>
+      <masked>false</masked>
+      <name>percent_off</name>
+   </variable>
+   <variable>
+      <defaultValue>'once'</defaultValue>
+      <description></description>
+      <id>aea2125a-a51c-49ab-ad7b-c29dd66200be</id>
+      <masked>false</masked>
+      <name>duration</name>
+   </variable>
+</TestCaseEntity>

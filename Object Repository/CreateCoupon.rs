@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>DeleteCoupon</name>
+   <name>CreateCoupon</name>
    <tag></tag>
-   <elementGuidId>715d583a-bdb7-4f40-814a-01f72f20c37e</elementGuidId>
+   <elementGuidId>2c0768c4-dfb9-41e7-8c36-c43a340941ab</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -22,13 +22,41 @@
       <value>Basic c2tfdGVzdF9uVW9DUHhnd2xDdExqMVkyREpGblMxZTk6</value>
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>https://api.stripe.com/v1/coupons/7TeZ0Gkb</restUrl>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>${base_URL}${base_PATH}?percent_off=${percent_off}&amp;duration=${duration}</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
+   <variables>
+      <defaultValue>'88'</defaultValue>
+      <description></description>
+      <id>4c239741-f882-4971-aa3d-53574b93528f</id>
+      <masked>false</masked>
+      <name>percent_off</name>
+   </variables>
+   <variables>
+      <defaultValue>'once'</defaultValue>
+      <description></description>
+      <id>d235fcba-045e-4bb4-917e-d16b2ec599a5</id>
+      <masked>false</masked>
+      <name>duration</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.BASEURL</defaultValue>
+      <description></description>
+      <id>959fde32-5226-4b99-bf4a-4ca4dc7a8255</id>
+      <masked>false</masked>
+      <name>base_URL</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.BASEPATH</defaultValue>
+      <description></description>
+      <id>648818d3-3ffd-4414-aef1-e50c67783327</id>
+      <masked>false</masked>
+      <name>base_PATH</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -50,6 +78,9 @@ WS.verifyResponseStatusCode(response, 200)
 assertThat(response.getStatusCode()).isEqualTo(200)
 
 
-WS.verifyElementPropertyValue(response, 'deleted', 'true')</verificationScript>
+
+
+
+</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
