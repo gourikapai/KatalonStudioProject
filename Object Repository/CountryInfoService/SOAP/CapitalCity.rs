@@ -17,7 +17,7 @@
   &lt;SOAP-ENV:Header/>
   &lt;SOAP-ENV:Body>
     &lt;tns:CapitalCity>
-      &lt;tns:sCountryISOCode>PK&lt;/tns:sCountryISOCode>
+      &lt;tns:sCountryISOCode>${CountryISOCode}&lt;/tns:sCountryISOCode>
     &lt;/tns:CapitalCity>
   &lt;/SOAP-ENV:Body>
 &lt;/SOAP-ENV:Envelope>
@@ -25,6 +25,13 @@
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
    <soapServiceFunction>CapitalCity</soapServiceFunction>
+   <variables>
+      <defaultValue>GlobalVariable.CountryISOCode</defaultValue>
+      <description></description>
+      <id>1f33ee79-86e3-4b55-9d41-0c115cf3aad7</id>
+      <masked>false</masked>
+      <name>CountryISOCode</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -50,7 +57,9 @@ assertThat(response.getStatusCode()).isEqualTo(200)
 //only possible in new version of Katalon studio
 
 
-WS.verifyElementText(response, 'CapitalCityResponse.CapitalCityResult', 'Islamabad')
-</verificationScript>
+
+
+
+WS.verifyElementText(response, 'CapitalCityResponse.CapitalCityResult', 'Andorra La Ville')</verificationScript>
    <wsdlAddress>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

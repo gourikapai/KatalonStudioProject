@@ -4,4 +4,14 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'IN'</initValue>
+      <name>CountryISOCode</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'INR'</initValue>
+      <name>CurrencyISOCode</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

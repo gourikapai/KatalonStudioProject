@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>SOAPDataDrivenTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>10224604-c904-4478-96a3-72ea89fe733d</testCaseGuid>
+   <variable>
+      <defaultValue>'PK'</defaultValue>
+      <description></description>
+      <id>0ff89948-3116-4e9e-907e-f4143ddb04d7</id>
+      <masked>false</masked>
+      <name>country</name>
+   </variable>
+   <variable>
+      <defaultValue>'Islamabad'</defaultValue>
+      <description></description>
+      <id>41730dc0-c323-42c6-ab99-4ad56a8772ac</id>
+      <masked>false</masked>
+      <name>capital</name>
+   </variable>
+   <variable>
+      <defaultValue>'PKR'</defaultValue>
+      <description></description>
+      <id>af7e4d40-3c48-4eba-a144-6c0422f835d5</id>
+      <masked>false</masked>
+      <name>CurrencyCode</name>
+   </variable>
+   <variable>
+      <defaultValue>'Rupees'</defaultValue>
+      <description></description>
+      <id>02fe256b-1140-4bc7-92e2-35ad0f9220f3</id>
+      <masked>false</masked>
+      <name>CurrencyName</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-04-26T09:40:31</date>
+  <millis>1556286031078</millis>
+  <sequence>0</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startSuite</method>
+  <thread>1</thread>
+  <message>Start Test Suite : Test Suites/SOAPDataDrivenTestDemo</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="name">SOAPDataDrivenTestDemo</property>
+  <property name="description"></property>
+  <property name="id">Test Suites/SOAPDataDrivenTestDemo</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:31</date>
+  <millis>1556286031100</millis>
+  <sequence>1</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostName = vishw - DESKTOP-OJ9G18E</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostName">vishw - DESKTOP-OJ9G18E</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:31</date>
+  <millis>1556286031101</millis>
+  <sequence>2</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>os = Windows 10 64bit</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="os">Windows 10 64bit</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:31</date>
+  <millis>1556286031102</millis>
+  <sequence>3</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostAddress = 192.168.1.105</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostAddress">192.168.1.105</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:31</date>
+  <millis>1556286031103</millis>
+  <sequence>4</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>katalonVersion = 6.1.2.2</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="katalonVersion">6.1.2.2</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:31</date>
+  <millis>1556286031361</millis>
+  <sequence>5</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/SOAPDataDrivenTest</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/SOAPDataDrivenTest</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/SOAPDataDrivenTest</property>
+  <property name="source">C:\\Users\\vishw\\git\\KatalonStudioProject\\Test Cases\\SOAPDataDrivenTest.tc</property>
+  <property name="tag"></property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:31</date>
+  <millis>1556286031456</millis>
+  <sequence>7</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>(Default) country = PK</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:31</date>
+  <millis>1556286031473</millis>
+  <sequence>8</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>(Default) capital = Islamabad</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:31</date>
+  <millis>1556286031487</millis>
+  <sequence>9</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>(Default) CurrencyCode = PKR</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:31</date>
+  <millis>1556286031495</millis>
+  <sequence>10</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>(Default) CurrencyName = Rupees</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:31</date>
+  <millis>1556286031903</millis>
+  <sequence>11</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : response1 = sendRequestAndVerify(findTestObject(\&amp;quot;getCapital\&amp;quot;, [\&amp;quot;CountryCode\&amp;quot;:country]))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">17</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:34</date>
+  <millis>1556286034974</millis>
+  <sequence>16</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Verification</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035194</millis>
+  <sequence>17</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : request = getInstance().getCurrentRequest()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">11</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035251</millis>
+  <sequence>18</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : request = getInstance().getCurrentRequest()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035251</millis>
+  <sequence>19</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : response = getInstance().getCurrentResponse()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">13</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035252</millis>
+  <sequence>20</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : response = getInstance().getCurrentResponse()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035253</millis>
+  <sequence>21</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Verification accomplished successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035253</millis>
+  <sequence>22</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Verification</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035257</millis>
+  <sequence>23</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Verify response successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035258</millis>
+  <sequence>24</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Send request and verify the response successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035258</millis>
+  <sequence>25</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : response1 = sendRequestAndVerify(findTestObject(\&amp;quot;getCapital\&amp;quot;, [\&amp;quot;CountryCode\&amp;quot;:country]))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035259</millis>
+  <sequence>26</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : println(\&amp;quot;----------------Country Code is :\&amp;quot; + country)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">19</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035262</millis>
+  <sequence>27</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : println(\&amp;quot;----------------Country Code is :\&amp;quot; + country)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035263</millis>
+  <sequence>28</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : verifyElementText(response1, \&amp;quot;CapitalCityResponse.CapitalCityResult\&amp;quot;, capital)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">21</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035663</millis>
+  <sequence>30</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Verify element text successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035664</millis>
+  <sequence>31</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : verifyElementText(response1, \&amp;quot;CapitalCityResponse.CapitalCityResult\&amp;quot;, capital)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035664</millis>
+  <sequence>32</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : println(\&amp;quot;-------------------Capital is :\&amp;quot; + capital)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">23</property>
+  <property name="stepIndex">4</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035665</millis>
+  <sequence>33</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : println(\&amp;quot;-------------------Capital is :\&amp;quot; + capital)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:35</date>
+  <millis>1556286035666</millis>
+  <sequence>34</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : response2 = sendRequestAndVerify(findTestObject(\&amp;quot;getCurrency\&amp;quot;, [\&amp;quot;CountryCode\&amp;quot;:country]))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">25</property>
+  <property name="stepIndex">5</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036676</millis>
+  <sequence>38</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Verification</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036799</millis>
+  <sequence>39</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : request = getInstance().getCurrentRequest()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">11</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036842</millis>
+  <sequence>40</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : request = getInstance().getCurrentRequest()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036842</millis>
+  <sequence>41</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : response = getInstance().getCurrentResponse()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">13</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036844</millis>
+  <sequence>42</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : response = getInstance().getCurrentResponse()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036844</millis>
+  <sequence>43</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Verification accomplished successfully</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036845</millis>
+  <sequence>44</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Verification</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036845</millis>
+  <sequence>45</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Verify response successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036846</millis>
+  <sequence>46</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Send request and verify the response successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036846</millis>
+  <sequence>47</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : response2 = sendRequestAndVerify(findTestObject(\&amp;quot;getCurrency\&amp;quot;, [\&amp;quot;CountryCode\&amp;quot;:country]))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036847</millis>
+  <sequence>48</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : println(\&amp;quot;--------------------------currency code is :\&amp;quot; + CurrencyCode)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">26</property>
+  <property name="stepIndex">6</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036848</millis>
+  <sequence>49</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : println(\&amp;quot;--------------------------currency code is :\&amp;quot; + CurrencyCode)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036849</millis>
+  <sequence>50</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : println(\&amp;quot;-------------------------------currency name is :\&amp;quot; + CurrencyName)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">28</property>
+  <property name="stepIndex">7</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036852</millis>
+  <sequence>51</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : println(\&amp;quot;-------------------------------currency name is :\&amp;quot; + CurrencyName)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036853</millis>
+  <sequence>52</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : verifyElementText(response2, \&amp;quot;CountryCurrencyResponse.CountryCurrencyResult.sISOCode\&amp;quot;, CurrencyCode)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">31</property>
+  <property name="stepIndex">8</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036901</millis>
+  <sequence>54</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Verify element text successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036903</millis>
+  <sequence>55</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : verifyElementText(response2, \&amp;quot;CountryCurrencyResponse.CountryCurrencyResult.sISOCode\&amp;quot;, CurrencyCode)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036903</millis>
+  <sequence>56</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : verifyElementText(response2, \&amp;quot;CountryCurrencyResponse.CountryCurrencyResult.sName\&amp;quot;, CurrencyName)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">33</property>
+  <property name="stepIndex">9</property>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036936</millis>
+  <sequence>58</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Verify element text successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036937</millis>
+  <sequence>59</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : verifyElementText(response2, \&amp;quot;CountryCurrencyResponse.CountryCurrencyResult.sName\&amp;quot;, CurrencyName)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036937</millis>
+  <sequence>60</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/SOAPDataDrivenTest</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036938</millis>
+  <sequence>61</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/SOAPDataDrivenTest</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-04-26T09:40:36</date>
+  <millis>1556286036990</millis>
+  <sequence>62</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endSuite</method>
+  <thread>1</thread>
+  <message>End Test Suite : Test Suites/SOAPDataDrivenTestDemo</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+</log>

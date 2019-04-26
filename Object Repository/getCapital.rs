@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>CountryName</name>
+   <name>getCapital</name>
    <tag></tag>
-   <elementGuidId>83adac9c-13bc-45eb-b3d4-564ec74b0150</elementGuidId>
+   <elementGuidId>816abc41-1d0f-441a-af83-fb9ead6681ed</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -16,15 +16,22 @@
    <soapBody>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tns=&quot;http://www.oorsprong.org/websamples.countryinfo&quot;>
   &lt;SOAP-ENV:Header/>
   &lt;SOAP-ENV:Body>
-    &lt;tns:CountryName>
-      &lt;tns:sCountryISOCode>?&lt;/tns:sCountryISOCode>
-    &lt;/tns:CountryName>
+    &lt;tns:CapitalCity>
+      &lt;tns:sCountryISOCode>${CountryCode}&lt;/tns:sCountryISOCode>
+    &lt;/tns:CapitalCity>
   &lt;/SOAP-ENV:Body>
 &lt;/SOAP-ENV:Envelope>
 </soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
-   <soapServiceFunction>CountryName</soapServiceFunction>
+   <soapServiceFunction>CapitalCity</soapServiceFunction>
+   <variables>
+      <defaultValue>'VN'</defaultValue>
+      <description></description>
+      <id>b1150bb4-af2b-4e52-a366-8fd20cfe3cfa</id>
+      <masked>false</masked>
+      <name>CountryCode</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -38,6 +45,7 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-</verificationScript>
+
+//WS.verifyElementText(response, 'CapitalCityResponse.CapitalCityResult', 'Hanoi')</verificationScript>
    <wsdlAddress>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

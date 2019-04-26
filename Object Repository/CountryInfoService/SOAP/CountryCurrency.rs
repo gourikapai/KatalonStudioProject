@@ -17,7 +17,7 @@
   &lt;SOAP-ENV:Header/>
   &lt;SOAP-ENV:Body>
     &lt;tns:CountryCurrency>
-      &lt;tns:sCountryISOCode>?&lt;/tns:sCountryISOCode>
+      &lt;tns:sCountryISOCode>${CountryISOCode}&lt;/tns:sCountryISOCode>
     &lt;/tns:CountryCurrency>
   &lt;/SOAP-ENV:Body>
 &lt;/SOAP-ENV:Envelope>
@@ -25,5 +25,27 @@
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
    <soapServiceFunction>CountryCurrency</soapServiceFunction>
+   <variables>
+      <defaultValue>GlobalVariable.CountryISOCode</defaultValue>
+      <description></description>
+      <id>6dacba9a-505d-449b-a4bb-d1dfb9932b7b</id>
+      <masked>false</masked>
+      <name>CountryISOCode</name>
+   </variables>
+   <verificationScript>import static org.assertj.core.api.Assertions.*
+
+import com.kms.katalon.core.testobject.RequestObject
+import com.kms.katalon.core.testobject.ResponseObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webservice.verification.WSResponseManager
+
+import groovy.json.JsonSlurper
+import internal.GlobalVariable as GlobalVariable
+
+RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
+
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+WS.verifyElementText(response, 'CountryCurrencyResponse.CountryCurrencyResult.sISOCode', 'EUR')</verificationScript>
    <wsdlAddress>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL</wsdlAddress>
 </WebServiceRequestEntity>

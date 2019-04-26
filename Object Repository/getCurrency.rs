@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>CountryName</name>
+   <name>getCurrency</name>
    <tag></tag>
-   <elementGuidId>83adac9c-13bc-45eb-b3d4-564ec74b0150</elementGuidId>
+   <elementGuidId>50750e07-cd84-4b45-a9d8-9c5a553fc73e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <followRedirects>false</followRedirects>
@@ -16,15 +16,22 @@
    <soapBody>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&lt;SOAP-ENV:Envelope xmlns:SOAP-ENV=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:tns=&quot;http://www.oorsprong.org/websamples.countryinfo&quot;>
   &lt;SOAP-ENV:Header/>
   &lt;SOAP-ENV:Body>
-    &lt;tns:CountryName>
-      &lt;tns:sCountryISOCode>?&lt;/tns:sCountryISOCode>
-    &lt;/tns:CountryName>
+    &lt;tns:CountryCurrency>
+      &lt;tns:sCountryISOCode>${CountryCode}&lt;/tns:sCountryISOCode>
+    &lt;/tns:CountryCurrency>
   &lt;/SOAP-ENV:Body>
 &lt;/SOAP-ENV:Envelope>
 </soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod>SOAP</soapRequestMethod>
-   <soapServiceFunction>CountryName</soapServiceFunction>
+   <soapServiceFunction>CountryCurrency</soapServiceFunction>
+   <variables>
+      <defaultValue>'IN'</defaultValue>
+      <description></description>
+      <id>ece1a0ca-8f94-4219-9641-39114a91f0c4</id>
+      <masked>false</masked>
+      <name>CountryCode</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
@@ -38,6 +45,8 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-</verificationScript>
+
+//WS.verifyElementText(response, 'CountryCurrencyResponse.CountryCurrencyResult.sISOCode', 'INR')
+//WS.verifyElementText(response, 'CountryCurrencyResponse.CountryCurrencyResult.sName', 'Rupees')</verificationScript>
    <wsdlAddress>http://webservices.oorsprong.org/websamples.countryinfo/CountryInfoService.wso?WSDL</wsdlAddress>
 </WebServiceRequestEntity>
